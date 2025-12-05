@@ -1,0 +1,31 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:15
+    container_name: taskpilot_db
+    restart: always
+    environment:
+      POSTGRES_USER: taskpilot
+      POSTGRES_PASSWORD: taskpilot
+      POSTGRES_DB: taskpilot_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  backend:
+    build: ./backend
+    container_name: taskpilot_backend
+    restart: always
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: "postgresql://taskpilot:taskpilot@db:5432/taskpilot_db"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+
+volumes:
+  postgres_data:

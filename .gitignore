@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+env/
+venv/
+*.env
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.so
+
+
+# Virtualenv
+.venv/
+
+
+# Docker
+*.log
+docker-compose.override.yml
+
+
+# IDEs
+.vscode/
+.idea/
+
+
+# Migrations
+backend/alembic/versions/
+
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
+# Coverage
+htmlcov/
+.coverage
+coverage.xml
+
+
+# Node modules (frontend)
+frontend/simple-ui/node_modules/
