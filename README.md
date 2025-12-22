@@ -46,34 +46,33 @@ TaskPilot is a fully-containerized CRUD backend API built using FastAPI and Post
 | **Testing** | pytest |
 
 ---
+## Folder Structure
 
-# 📂 Folder Structure
-
+```text
 taskpilot/
-│
 ├── backend/
-│ ├── app/
-│ │ ├── main.py
-│ │ ├── models.py
-│ │ ├── schemas.py
-│ │ ├── database.py
-│ │ ├── crud.py
-│ │ ├── auth.py
-│ │ ├── deps.py
-│ │ ├── routers/
-│ │ │ ├── users.py
-│ │ │ └── tasks.py
-│ │ └── tests/
-│ │ └── test_basic.py
-│ ├── requirements.txt
-│ ├── Dockerfile
-│
-├── frontend/simple-ui/
-│ ├── index.html
-│ └── main.js
-│
+│   ├── app/
+│   │   ├── main.py
+│   │   ├── models.py
+│   │   ├── schemas.py
+│   │   ├── database.py
+│   │   ├── crud.py
+│   │   ├── auth.py
+│   │   ├── deps.py
+│   │   └── routers/
+│   │       └── users.py
+│   ├── tasks.py
+│   └── tests/
+│       └── test_basic.py
+├── requirements.txt
+├── Dockerfile
 ├── docker-compose.yml
+├── frontend/
+│   └── simple-ui/
+│       ├── index.html
+│       └── main.js
 ├── .gitignore
 ├── .dockerignore
 ├── commit-message-template.txt
 └── README.md
+```
