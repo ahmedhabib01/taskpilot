@@ -7,7 +7,7 @@ This project showcases backend architecture, DevOps practices, and clean code st
 ## 🚀 Status & Badges
 
 ![API Status](https://img.shields.io/badge/API-Running-brightgreen)
-![CI](https://github.com/<ahmedhabib22>/taskpilot/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/ahmedhabibb01/taskpilot/actions/workflows/ci.yml/badge.svg)
 ![Docker](https://img.shields.io/badge/Docker-Build-blue)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
